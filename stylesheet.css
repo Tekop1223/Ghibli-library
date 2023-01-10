@@ -1,0 +1,101 @@
+*{
+  box-sizing: border-box;
+}
+:root {
+  background-color: #242424;
+  color: white;
+}
+
+
+#root {
+  max-width:  1200px;
+  margin: 0 auto;
+}
+
+.container {
+   display: flex;
+  flex-wrap: wrap;
+ 
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscacle;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+
+}
+
+.poster{
+  width: 100%
+}
+
+.card {
+  margin: 1rem;
+  background: linear-gradient(90deg, #242430, #a6c1a6ee 100%);
+  box-shadow: 2px 4px 25px;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all .2s linear;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 2px 4px 25px rbga(0, 0, 0, .2);
+}
+
+.title {
+  text-align: center;
+  padding: 1.5rem 2.5rem;
+  background-image: linear-gradient(90deg, #242430, #a6c1a6ee 100%);
+  margin: 0 0 0rem 0;
+  border-bottom:3px solid rgba(200, 200, 255, 0.5);
+  font-size: 1.5rem;
+  color: white;
+
+}
+
+
+.description {
+  padding: 0 1.5rem 1.5rem 1.5rem;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  
+}
+
+
+.runningtime {
+  display: inline-block;
+  margin: 12px;
+  text-align: center;
+  padding: 0 1.5rem 1.5rem 1.5rem;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  box-shadow: 2px 4px 25px;
+  background: linear-gradient(90deg, #242430, #a6c1a6ee 100%);
+}
+
+.RTscore {
+  display: inline-block;,,
+  margin: 12px;
+  text-align: center;
+  padding: 0 1.5rem 1.5rem 1.5rem;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  box-shadow: 2px 4px 25px;
+  background: linear-gradient(90deg, #242430, #a6c1a6ee 100%);
+}
+
+
+@media screen and (min-width: 600px) {
+  .card {
+    flex: 1 1 calc(33% - 2rem)
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .card {
+    flex: 1 1 calc(33% - 2rem)
+  }
+}
+
